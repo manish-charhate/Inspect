@@ -8,17 +8,57 @@
 
 /* Begin PBXBuildFile section */
 		ACB70E332C5FBBEE00923997 /* InspectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70E322C5FBBEE00923997 /* InspectApp.swift */; };
-		ACB70E352C5FBBEE00923997 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70E342C5FBBEE00923997 /* ContentView.swift */; };
+		ACB70E352C5FBBEE00923997 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70E342C5FBBEE00923997 /* MainView.swift */; };
 		ACB70E372C5FBBF000923997 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACB70E362C5FBBF000923997 /* Assets.xcassets */; };
 		ACB70E3A2C5FBBF000923997 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACB70E392C5FBBF000923997 /* Preview Assets.xcassets */; };
+		ACB70E442C5FDCB900923997 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70E432C5FDCB900923997 /* AuthenticationView.swift */; };
+		ACB70E482C5FE87600923997 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70E472C5FE87600923997 /* AuthenticationViewModel.swift */; };
+		ACB70E4B2C5FE88D00923997 /* AuthenticationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70E4A2C5FE88D00923997 /* AuthenticationRepository.swift */; };
+		ACB70E4D2C5FE91000923997 /* RemoteAuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70E4C2C5FE91000923997 /* RemoteAuthRepository.swift */; };
+		ACB70E522C60DECC00923997 /* AppDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70E512C60DECC00923997 /* AppDependencyContainer.swift */; };
+		ACB70E572C60DF8000923997 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70E562C60DF8000923997 /* HttpClient.swift */; };
+		ACB70E592C60DFD900923997 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70E582C60DFD900923997 /* Endpoint.swift */; };
+		ACB70E5C2C60DFF500923997 /* HttpMethodType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70E5B2C60DFF500923997 /* HttpMethodType.swift */; };
+		ACB70E5E2C60E0C700923997 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70E5D2C60E0C700923997 /* NetworkError.swift */; };
+		ACB70E602C60E14900923997 /* DataParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70E5F2C60E14900923997 /* DataParsing.swift */; };
+		ACB70E632C60E18C00923997 /* URLSessionHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70E622C60E18C00923997 /* URLSessionHttpClient.swift */; };
+		ACB70E652C60E1FF00923997 /* JSONDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70E642C60E1FF00923997 /* JSONDataParser.swift */; };
+		ACB70E672C60E41900923997 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70E662C60E41900923997 /* NetworkManager.swift */; };
+		ACB70E6C2C60E60300923997 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70E6B2C60E60300923997 /* MainViewModel.swift */; };
+		ACB70E6F2C60E7AF00923997 /* SignInResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70E6E2C60E7AF00923997 /* SignInResponder.swift */; };
+		ACB70E712C60E7BA00923997 /* SignUpResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70E702C60E7BA00923997 /* SignUpResponder.swift */; };
+		ACB70E742C60EFAD00923997 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70E732C60EFAD00923997 /* HomeView.swift */; };
+		ACB70E772C60F52A00923997 /* AuthDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70E762C60F52A00923997 /* AuthDependencyContainer.swift */; };
+		ACB70E7A2C60FAEF00923997 /* SignUpEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70E792C60FAEF00923997 /* SignUpEndpoint.swift */; };
+		ACB70E7C2C60FD4B00923997 /* SignInEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70E7B2C60FD4B00923997 /* SignInEndpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ACB70E2F2C5FBBEE00923997 /* Inspect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Inspect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACB70E322C5FBBEE00923997 /* InspectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectApp.swift; sourceTree = "<group>"; };
-		ACB70E342C5FBBEE00923997 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ACB70E342C5FBBEE00923997 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		ACB70E362C5FBBF000923997 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACB70E392C5FBBF000923997 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ACB70E432C5FDCB900923997 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		ACB70E472C5FE87600923997 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		ACB70E4A2C5FE88D00923997 /* AuthenticationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRepository.swift; sourceTree = "<group>"; };
+		ACB70E4C2C5FE91000923997 /* RemoteAuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAuthRepository.swift; sourceTree = "<group>"; };
+		ACB70E512C60DECC00923997 /* AppDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencyContainer.swift; sourceTree = "<group>"; };
+		ACB70E562C60DF8000923997 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		ACB70E582C60DFD900923997 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		ACB70E5B2C60DFF500923997 /* HttpMethodType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethodType.swift; sourceTree = "<group>"; };
+		ACB70E5D2C60E0C700923997 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		ACB70E5F2C60E14900923997 /* DataParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParsing.swift; sourceTree = "<group>"; };
+		ACB70E622C60E18C00923997 /* URLSessionHttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHttpClient.swift; sourceTree = "<group>"; };
+		ACB70E642C60E1FF00923997 /* JSONDataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDataParser.swift; sourceTree = "<group>"; };
+		ACB70E662C60E41900923997 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		ACB70E6B2C60E60300923997 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		ACB70E6E2C60E7AF00923997 /* SignInResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInResponder.swift; sourceTree = "<group>"; };
+		ACB70E702C60E7BA00923997 /* SignUpResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpResponder.swift; sourceTree = "<group>"; };
+		ACB70E732C60EFAD00923997 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		ACB70E762C60F52A00923997 /* AuthDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthDependencyContainer.swift; sourceTree = "<group>"; };
+		ACB70E792C60FAEF00923997 /* SignUpEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEndpoint.swift; sourceTree = "<group>"; };
+		ACB70E7B2C60FD4B00923997 /* SignInEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEndpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,11 +91,11 @@
 		ACB70E312C5FBBEE00923997 /* Inspect */ = {
 			isa = PBXGroup;
 			children = (
-				ACB70E422C5FDC8700923997 /* Profile */,
-				ACB70E412C5FDC7800923997 /* Inspections */,
-				ACB70E402C5FDC6400923997 /* Authentication */,
+				ACB70E682C60E5E700923997 /* Main */,
+				ACB70E4E2C60D9D000923997 /* Core */,
+				ACB70E722C60EB9600923997 /* Features */,
 				ACB70E322C5FBBEE00923997 /* InspectApp.swift */,
-				ACB70E342C5FBBEE00923997 /* ContentView.swift */,
+				ACB70E512C60DECC00923997 /* AppDependencyContainer.swift */,
 				ACB70E362C5FBBF000923997 /* Assets.xcassets */,
 				ACB70E382C5FBBF000923997 /* Preview Content */,
 			);
@@ -73,6 +113,12 @@
 		ACB70E402C5FDC6400923997 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				ACB70E782C60FADD00923997 /* Endpoints */,
+				ACB70E752C60F50C00923997 /* DI */,
+				ACB70E6D2C60E79000923997 /* Protocols */,
+				ACB70E492C5FE87A00923997 /* Repository */,
+				ACB70E462C5FE86500923997 /* ViewModel */,
+				ACB70E452C5FE85C00923997 /* Views */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -89,6 +135,148 @@
 			children = (
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		ACB70E452C5FE85C00923997 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ACB70E432C5FDCB900923997 /* AuthenticationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ACB70E462C5FE86500923997 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ACB70E472C5FE87600923997 /* AuthenticationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ACB70E492C5FE87A00923997 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				ACB70E4A2C5FE88D00923997 /* AuthenticationRepository.swift */,
+				ACB70E4C2C5FE91000923997 /* RemoteAuthRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		ACB70E4E2C60D9D000923997 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				ACB70E502C60D9DD00923997 /* Persistence */,
+				ACB70E4F2C60D9D400923997 /* Network */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		ACB70E4F2C60D9D400923997 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				ACB70E612C60E17700923997 /* Implementations */,
+				ACB70E5A2C60DFE800923997 /* Enums */,
+				ACB70E552C60DF7500923997 /* Protocols */,
+				ACB70E662C60E41900923997 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		ACB70E502C60D9DD00923997 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		ACB70E552C60DF7500923997 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				ACB70E562C60DF8000923997 /* HttpClient.swift */,
+				ACB70E582C60DFD900923997 /* Endpoint.swift */,
+				ACB70E5F2C60E14900923997 /* DataParsing.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		ACB70E5A2C60DFE800923997 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				ACB70E5B2C60DFF500923997 /* HttpMethodType.swift */,
+				ACB70E5D2C60E0C700923997 /* NetworkError.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		ACB70E612C60E17700923997 /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				ACB70E622C60E18C00923997 /* URLSessionHttpClient.swift */,
+				ACB70E642C60E1FF00923997 /* JSONDataParser.swift */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+		ACB70E682C60E5E700923997 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				ACB70E6A2C60E5F900923997 /* ViewModel */,
+				ACB70E692C60E5F000923997 /* Views */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		ACB70E692C60E5F000923997 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ACB70E342C5FBBEE00923997 /* MainView.swift */,
+				ACB70E732C60EFAD00923997 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ACB70E6A2C60E5F900923997 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ACB70E6B2C60E60300923997 /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ACB70E6D2C60E79000923997 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				ACB70E6E2C60E7AF00923997 /* SignInResponder.swift */,
+				ACB70E702C60E7BA00923997 /* SignUpResponder.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		ACB70E722C60EB9600923997 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				ACB70E402C5FDC6400923997 /* Authentication */,
+				ACB70E412C5FDC7800923997 /* Inspections */,
+				ACB70E422C5FDC8700923997 /* Profile */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		ACB70E752C60F50C00923997 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				ACB70E762C60F52A00923997 /* AuthDependencyContainer.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		ACB70E782C60FADD00923997 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				ACB70E792C60FAEF00923997 /* SignUpEndpoint.swift */,
+				ACB70E7B2C60FD4B00923997 /* SignInEndpoint.swift */,
+			);
+			name = Endpoints;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,8 +349,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACB70E352C5FBBEE00923997 /* ContentView.swift in Sources */,
+				ACB70E482C5FE87600923997 /* AuthenticationViewModel.swift in Sources */,
+				ACB70E592C60DFD900923997 /* Endpoint.swift in Sources */,
+				ACB70E5C2C60DFF500923997 /* HttpMethodType.swift in Sources */,
+				ACB70E522C60DECC00923997 /* AppDependencyContainer.swift in Sources */,
+				ACB70E572C60DF8000923997 /* HttpClient.swift in Sources */,
+				ACB70E352C5FBBEE00923997 /* MainView.swift in Sources */,
+				ACB70E652C60E1FF00923997 /* JSONDataParser.swift in Sources */,
+				ACB70E602C60E14900923997 /* DataParsing.swift in Sources */,
+				ACB70E772C60F52A00923997 /* AuthDependencyContainer.swift in Sources */,
+				ACB70E712C60E7BA00923997 /* SignUpResponder.swift in Sources */,
 				ACB70E332C5FBBEE00923997 /* InspectApp.swift in Sources */,
+				ACB70E632C60E18C00923997 /* URLSessionHttpClient.swift in Sources */,
+				ACB70E4D2C5FE91000923997 /* RemoteAuthRepository.swift in Sources */,
+				ACB70E7A2C60FAEF00923997 /* SignUpEndpoint.swift in Sources */,
+				ACB70E4B2C5FE88D00923997 /* AuthenticationRepository.swift in Sources */,
+				ACB70E672C60E41900923997 /* NetworkManager.swift in Sources */,
+				ACB70E5E2C60E0C700923997 /* NetworkError.swift in Sources */,
+				ACB70E442C5FDCB900923997 /* AuthenticationView.swift in Sources */,
+				ACB70E6F2C60E7AF00923997 /* SignInResponder.swift in Sources */,
+				ACB70E6C2C60E60300923997 /* MainViewModel.swift in Sources */,
+				ACB70E7C2C60FD4B00923997 /* SignInEndpoint.swift in Sources */,
+				ACB70E742C60EFAD00923997 /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +429,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -278,7 +486,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -311,6 +519,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = charhate.manish.Inspect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -340,6 +552,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = charhate.manish.Inspect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

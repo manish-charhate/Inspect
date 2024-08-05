@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct InspectApp: App {
+    
+    let appContainer = AppDependencyContainer()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            appContainer.makeMainView()
         }
     }
 }
