@@ -31,6 +31,8 @@
 		ACB70E772C60F52A00923997 /* AuthDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70E762C60F52A00923997 /* AuthDependencyContainer.swift */; };
 		ACB70E7A2C60FAEF00923997 /* SignUpEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70E792C60FAEF00923997 /* SignUpEndpoint.swift */; };
 		ACB70E7C2C60FD4B00923997 /* SignInEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70E7B2C60FD4B00923997 /* SignInEndpoint.swift */; };
+		ACB70E822C61388400923997 /* InspectionsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70E812C61388400923997 /* InspectionsTabView.swift */; };
+		ACB70E842C61389200923997 /* ProfileTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70E832C61389200923997 /* ProfileTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +61,8 @@
 		ACB70E762C60F52A00923997 /* AuthDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthDependencyContainer.swift; sourceTree = "<group>"; };
 		ACB70E792C60FAEF00923997 /* SignUpEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEndpoint.swift; sourceTree = "<group>"; };
 		ACB70E7B2C60FD4B00923997 /* SignInEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEndpoint.swift; sourceTree = "<group>"; };
+		ACB70E812C61388400923997 /* InspectionsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionsTabView.swift; sourceTree = "<group>"; };
+		ACB70E832C61389200923997 /* ProfileTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +130,7 @@
 		ACB70E412C5FDC7800923997 /* Inspections */ = {
 			isa = PBXGroup;
 			children = (
+				ACB70E7F2C61386F00923997 /* Views */,
 			);
 			path = Inspections;
 			sourceTree = "<group>";
@@ -133,6 +138,7 @@
 		ACB70E422C5FDC8700923997 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				ACB70E802C61387700923997 /* Views */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -279,6 +285,22 @@
 			name = Endpoints;
 			sourceTree = "<group>";
 		};
+		ACB70E7F2C61386F00923997 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ACB70E812C61388400923997 /* InspectionsTabView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ACB70E802C61387700923997 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ACB70E832C61389200923997 /* ProfileTabView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -359,10 +381,12 @@
 				ACB70E602C60E14900923997 /* DataParsing.swift in Sources */,
 				ACB70E772C60F52A00923997 /* AuthDependencyContainer.swift in Sources */,
 				ACB70E712C60E7BA00923997 /* SignUpResponder.swift in Sources */,
+				ACB70E842C61389200923997 /* ProfileTabView.swift in Sources */,
 				ACB70E332C5FBBEE00923997 /* InspectApp.swift in Sources */,
 				ACB70E632C60E18C00923997 /* URLSessionHttpClient.swift in Sources */,
 				ACB70E4D2C5FE91000923997 /* RemoteAuthRepository.swift in Sources */,
 				ACB70E7A2C60FAEF00923997 /* SignUpEndpoint.swift in Sources */,
+				ACB70E822C61388400923997 /* InspectionsTabView.swift in Sources */,
 				ACB70E4B2C5FE88D00923997 /* AuthenticationRepository.swift in Sources */,
 				ACB70E672C60E41900923997 /* NetworkManager.swift in Sources */,
 				ACB70E5E2C60E0C700923997 /* NetworkError.swift in Sources */,
