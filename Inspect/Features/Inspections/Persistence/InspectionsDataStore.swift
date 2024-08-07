@@ -9,9 +9,9 @@ import Foundation
 
 protocol InspectionsDataStore {
     
-    func saveInspections(_ inspections: [Inspection])
+    func saveInspections(_ inspections: [InspectionData])
     
-    func saveInspection(_ inspection: Inspection)
+    func saveInspection(_ inspection: InspectionData)
     
-    func fetchInspections() -> [Inspection]
+    func fetchInspections() -> [InspectionData]
 }

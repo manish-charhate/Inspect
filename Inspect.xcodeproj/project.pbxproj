@@ -45,6 +45,7 @@
 		ACB70F3A2C61903E00923997 /* InspectionsDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70F392C61903E00923997 /* InspectionsDataStore.swift */; };
 		ACB70F3C2C6190E800923997 /* InspectionsFileDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70F3B2C6190E800923997 /* InspectionsFileDataStore.swift */; };
 		ACB70F422C6199F300923997 /* InspectionsDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70F412C6199F300923997 /* InspectionsDependencyContainer.swift */; };
+		ACB70F442C6382BE00923997 /* SubmitInspectionEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70F432C6382BE00923997 /* SubmitInspectionEndpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +88,7 @@
 		ACB70F392C61903E00923997 /* InspectionsDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionsDataStore.swift; sourceTree = "<group>"; };
 		ACB70F3B2C6190E800923997 /* InspectionsFileDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionsFileDataStore.swift; sourceTree = "<group>"; };
 		ACB70F412C6199F300923997 /* InspectionsDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionsDependencyContainer.swift; sourceTree = "<group>"; };
+		ACB70F432C6382BE00923997 /* SubmitInspectionEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitInspectionEndpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -364,6 +366,7 @@
 			isa = PBXGroup;
 			children = (
 				ACB70E9F2C616DE100923997 /* StartInspectionEndpoint.swift */,
+				ACB70F432C6382BE00923997 /* SubmitInspectionEndpoint.swift */,
 			);
 			path = Endpoint;
 			sourceTree = "<group>";
@@ -488,6 +491,7 @@
 				ACB70E672C60E41900923997 /* NetworkManager.swift in Sources */,
 				ACB70E5E2C60E0C700923997 /* NetworkError.swift in Sources */,
 				ACB70F3A2C61903E00923997 /* InspectionsDataStore.swift in Sources */,
+				ACB70F442C6382BE00923997 /* SubmitInspectionEndpoint.swift in Sources */,
 				ACB70E442C5FDCB900923997 /* AuthenticationView.swift in Sources */,
 				ACB70E8C2C6141C400923997 /* InspectionsRepository.swift in Sources */,
 				ACB70E6F2C60E7AF00923997 /* SignInResponder.swift in Sources */,

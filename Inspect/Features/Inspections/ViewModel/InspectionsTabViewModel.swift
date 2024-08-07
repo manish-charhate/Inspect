@@ -27,7 +27,7 @@ final class InspectionsTabViewModel: ObservableObject {
             isLoading = false
         }
         
-        inspections = repository.fetchInspections()
+        inspections = repository.fetchInspections().map { $0.inspection }
     }
     
     @MainActor func startNewInspection() async {

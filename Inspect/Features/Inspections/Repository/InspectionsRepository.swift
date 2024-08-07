@@ -11,7 +11,7 @@ protocol InspectionsRepository {
     
     func startNewInspection() async throws -> InspectionData
     
-    func fetchInspections() -> [Inspection]
+    func fetchInspections() -> [InspectionData]
     
     func saveAnswer(
         withChoiceId choiceId: Int,
@@ -19,4 +19,6 @@ protocol InspectionsRepository {
         ofCategoryId categoryId: Int,
         andInspectionId inspectionId: Int
     ) -> Bool
+    
+    func submitInspection(withId inspectionId: Int) async throws -> Bool
 }

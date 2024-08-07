@@ -11,13 +11,13 @@ final class InspectionsFileDataStore: InspectionsDataStore {
     
     private let filename = "inspections.json"
     
-    func fetchInspections() -> [Inspection] {
+    func fetchInspections() -> [InspectionData] {
         let fileURL = getDocumentsDirectory().appendingPathComponent(filename)
         
         if FileManager.default.fileExists(atPath: fileURL.path) {
             do {
                 let data = try Data(contentsOf: fileURL)
-                let existingInspections = try JSONDecoder().decode([Inspection].self, from: data)
+                let existingInspections = try JSONDecoder().decode([InspectionData].self, from: data)
                 return existingInspections
             } catch {
                 debugPrint("Error reading existing file: \(error)")
@@ -28,7 +28,7 @@ final class InspectionsFileDataStore: InspectionsDataStore {
         return []
     }
 
-    func saveInspections(_ inspections: [Inspection]) {
+    func saveInspections(_ inspections: [InspectionData]) {
         let fileURL = getDocumentsDirectory().appendingPathComponent(filename)
 
         do {
@@ -40,15 +40,15 @@ final class InspectionsFileDataStore: InspectionsDataStore {
         }
     }
     
-    func saveInspection(_ inspection: Inspection) {
+    func saveInspection(_ inspection: InspectionData) {
         let fileURL = getDocumentsDirectory().appendingPathComponent(filename)
         
-        var combinedArray: [Inspection] = []
+        var combinedArray: [InspectionData] = []
 
         if FileManager.default.fileExists(atPath: fileURL.path) {
             do {
                 let data = try Data(contentsOf: fileURL)
-                let existingArray = try JSONDecoder().decode([Inspection].self, from: data)
+                let existingArray = try JSONDecoder().decode([InspectionData].self, from: data)
                 combinedArray = existingArray
             } catch {
                 print("Error reading existing file: \(error)")

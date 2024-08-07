@@ -10,10 +10,10 @@ import Foundation
 struct StartInspectionEndpoint: Endpoint {
     
     var path: String {
-        return "/api/inspections/start"
+        "/api/inspections/start"
     }
     
     var methodType: HttpMethodType {
-        return .GET
+        .GET
     }
 }

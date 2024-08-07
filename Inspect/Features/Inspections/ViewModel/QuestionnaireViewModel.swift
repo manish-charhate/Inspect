@@ -58,8 +58,17 @@ final class QuestionnaireViewModel: ObservableObject {
         }
     }
     
-    func submit() -> Bool {
-        return saveResponse()
+    func submit() async -> Bool {
+        if saveResponse() {
+            do {
+               return try await repository.submitInspection(withId: inspectionId)
+            } catch {
+                debugPrint(error.localizedDescription)
+                return false
+            }
+        } else {
+            return false
+        }
     }
     
     func selectOption(_ option: AnswerChoice) {

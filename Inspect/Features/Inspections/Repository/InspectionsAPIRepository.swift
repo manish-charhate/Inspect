@@ -25,11 +25,11 @@ final class InspectionsAPIRepository: InspectionsRepository {
     
     func startNewInspection() async throws -> InspectionData {
         let data: InspectionData = try await networkManager.execute(StartInspectionEndpoint())
-        dataStore.saveInspection(data.inspection)
+        dataStore.saveInspection(data)
         return data
     }
     
-    func fetchInspections() -> [Inspection] {
+    func fetchInspections() -> [InspectionData] {
         return dataStore.fetchInspections()
     }
     
@@ -41,11 +41,11 @@ final class InspectionsAPIRepository: InspectionsRepository {
     ) -> Bool {
         var inspections = dataStore.fetchInspections()
         
-        guard let targetInspectionIndex = inspections.firstIndex(where: { $0.id == inspectionId }) else {
+        guard let targetInspectionIndex = inspections.firstIndex(where: { $0.inspection.id == inspectionId }) else {
             return false
         }
         
-        var targetInspection = inspections[targetInspectionIndex]
+        var targetInspection = inspections[targetInspectionIndex].inspection
         
         if let categoryIndex = targetInspection.survey.categories.firstIndex(where: { $0.id == categoryId }),
            let questionIndex = targetInspection.survey.categories[categoryIndex].questions.firstIndex(where: { $0.id == questionId }) {
@@ -72,8 +72,17 @@ final class InspectionsAPIRepository: InspectionsRepository {
             return false
         }
         
-        inspections[targetInspectionIndex] = targetInspection
+        inspections[targetInspectionIndex] = InspectionData(inspection: targetInspection)
         dataStore.saveInspections(inspections)
         return true
+    }
+    
+    func submitInspection(withId inspectionId: Int) async throws -> Bool {
+        let inspections = dataStore.fetchInspections()
+        
+        guard let inspection = inspections.first(where: { $0.inspection.id == inspectionId }) else { return false }
+        
+        let success: Bool = try await networkManager.execute(SubmitInspectionEndpoint(inspection: inspection))
+        return success
     }
 }

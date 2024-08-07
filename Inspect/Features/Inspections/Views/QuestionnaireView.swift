@@ -69,10 +69,13 @@ struct QuestionnaireView: View {
                 Spacer()
                 
                 if viewModel.isLastQuestion {
-                    Button(action: {
-                        viewModel.submit()
-                        dismiss()
-                    }) {
+                    Button {
+                        Task {
+                            if await viewModel.submit() {
+                                dismiss()
+                            }
+                        }
+                    } label : {
                         Text("Submit")
                     }
                 } else {
