@@ -11,8 +11,6 @@ struct InspectionsEmptyStateView: View {
     
     @ObservedObject var viewModel: InspectionsTabViewModel
     
-    @State private var showQuestionnaire = false
-    
     var body: some View {
         VStack {
             Image(systemName: "clipboard")
@@ -28,7 +26,6 @@ struct InspectionsEmptyStateView: View {
             Button {
                 Task {
                     await viewModel.startNewInspection()
-                    showQuestionnaire = true
                 }
             } label: {
                 Text("Start New Inspection")
@@ -38,9 +35,6 @@ struct InspectionsEmptyStateView: View {
                     .foregroundStyle(.white)
                     .cornerRadius(8)
             }
-        }
-        .fullScreenCover(isPresented: $showQuestionnaire) {
-            Text("hello")
         }
     }
 }
