@@ -15,6 +15,8 @@ struct InspectionsListView: View {
         NavigationView {
             List {
                 ForEach(viewModel.inspections) { inspection in
+                    let isInspectionDone = viewModel.inspectionStatuses[inspection.id] ?? false
+                    
                     DisclosureGroup {
                         let categories = inspection.survey.categories
                         
@@ -24,19 +26,32 @@ struct InspectionsListView: View {
                                     viewModel.selectedInspectionId = inspection.id
                                     viewModel.selectedCategory = category
                                 } label: {
-                                    Text("\(category.name)")
-                                        .padding(.leading)
+                                    HStack {
+                                        Text("\(category.name)")
+                                            .padding(.leading)
+                                    }
                                 }
                             }
                         }
                     } label: {
-                        VStack(alignment: .leading) {
-                            Text("Inspection \(inspection.id)")
-                                .font(.headline)
-                            Text("Area: \(inspection.area.name)")
-                                .font(.subheadline)
-                            Text("Type: \(inspection.inspectionType.name)")
-                                .font(.subheadline)
+                        HStack {
+                            VStack(alignment: .leading) {
+                                Text("Inspection \(inspection.id)")
+                                    .font(.headline)
+                                Text("Area: \(inspection.area.name)")
+                                    .font(.subheadline)
+                                Text("Type: \(inspection.inspectionType.name)")
+                                    .font(.subheadline)
+                            }
+                            
+                            Spacer()
+                            
+                            Text("\(isInspectionDone ? "Done" : "Pending")")
+                                .font(.caption)
+                                .padding(.all, 4.0)
+                                .foregroundStyle(.white)
+                                .background(isInspectionDone ? Color.green : Color.orange)
+                                .clipShape(RoundedRectangle(cornerRadius: 2.0, style: .continuous))
                         }
                         .padding(.vertical, 5)
                     }

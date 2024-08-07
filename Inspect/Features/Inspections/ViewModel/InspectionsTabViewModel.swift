@@ -13,6 +13,7 @@ final class InspectionsTabViewModel: ObservableObject {
     @Published private(set) var isLoading = false
     @Published var selectedCategory: Category?
     @Published var selectedInspectionId = 0
+    @Published private(set) var inspectionStatuses = [Int: Bool]()
     
     let repository: InspectionsRepository
     
@@ -27,7 +28,24 @@ final class InspectionsTabViewModel: ObservableObject {
             isLoading = false
         }
         
-        inspections = repository.fetchInspections().map { $0.inspection }
+        let inspections = repository.fetchInspections().map { $0.inspection }
+        
+        inspections.forEach { inspection in
+            var isInspectionDone = true
+            
+            for category in inspection.survey.categories {
+                for question in category.questions {
+                    if question.selectedAnswerChoiceID == nil {
+                        isInspectionDone = false
+                        break
+                    }
+                }
+            }
+            
+            inspectionStatuses[inspection.id] = isInspectionDone
+        }
+        
+        self.inspections = inspections
     }
     
     @MainActor func startNewInspection() async {
