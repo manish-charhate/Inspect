@@ -9,11 +9,22 @@ import SwiftUI
 
 struct InspectionsTabView: View {
     
+    @ObservedObject var viewModel: InspectionsTabViewModel
+    
     var body: some View {
-        Text("Inspections")
+        ZStack {
+            if viewModel.inspections.isEmpty {
+                InspectionsEmptyStateView(viewModel: viewModel)
+            } else {
+                InspectionsListView(viewModel: viewModel)
+            }
+            
+            if viewModel.isLoading {
+                ProgressView()
+            }
+        }
+        .task {
+            await viewModel.loadInspections()
+        }
     }
-}
-
-#Preview {
-    InspectionsTabView()
 }

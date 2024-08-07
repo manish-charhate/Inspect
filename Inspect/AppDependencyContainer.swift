@@ -50,6 +50,15 @@ final class AppDependencyContainer {
     }
 
     func makeHomeView() -> HomeView {
-        HomeView()
+        HomeView(inspectionsTabView: makeInspectionsTabView(), profileTabView: makeProfileTabView())
+    }
+    
+    func makeInspectionsTabView() -> InspectionsTabView {
+        let inspectionsDependencyContainer = InspectionsDependencyContainer(appDependencyContainer: self)
+        return inspectionsDependencyContainer.makeInspectionsTabView()
+    }
+    
+    func makeProfileTabView() -> ProfileTabView {
+        return ProfileTabView()
     }
 }

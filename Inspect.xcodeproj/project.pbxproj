@@ -33,6 +33,18 @@
 		ACB70E7C2C60FD4B00923997 /* SignInEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70E7B2C60FD4B00923997 /* SignInEndpoint.swift */; };
 		ACB70E822C61388400923997 /* InspectionsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70E812C61388400923997 /* InspectionsTabView.swift */; };
 		ACB70E842C61389200923997 /* ProfileTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70E832C61389200923997 /* ProfileTabView.swift */; };
+		ACB70E872C613A3400923997 /* InspectionsEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70E862C613A3400923997 /* InspectionsEmptyStateView.swift */; };
+		ACB70E892C613BFD00923997 /* InspectionsTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70E882C613BFD00923997 /* InspectionsTabViewModel.swift */; };
+		ACB70E8C2C6141C400923997 /* InspectionsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70E8B2C6141C400923997 /* InspectionsRepository.swift */; };
+		ACB70E8F2C61423400923997 /* InspectionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70E8E2C61423400923997 /* InspectionData.swift */; };
+		ACB70E912C614C6A00923997 /* InspectionsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70E902C614C6A00923997 /* InspectionsListView.swift */; };
+		ACB70E932C6151C300923997 /* QuestionnaireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70E922C6151C300923997 /* QuestionnaireView.swift */; };
+		ACB70E952C6151F500923997 /* QuestionnaireViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70E942C6151F500923997 /* QuestionnaireViewModel.swift */; };
+		ACB70E9D2C616D7400923997 /* InspectionsAPIRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70E9C2C616D7400923997 /* InspectionsAPIRepository.swift */; };
+		ACB70EA02C616DE100923997 /* StartInspectionEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70E9F2C616DE100923997 /* StartInspectionEndpoint.swift */; };
+		ACB70F3A2C61903E00923997 /* InspectionsDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70F392C61903E00923997 /* InspectionsDataStore.swift */; };
+		ACB70F3C2C6190E800923997 /* InspectionsFileDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70F3B2C6190E800923997 /* InspectionsFileDataStore.swift */; };
+		ACB70F422C6199F300923997 /* InspectionsDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB70F412C6199F300923997 /* InspectionsDependencyContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +75,18 @@
 		ACB70E7B2C60FD4B00923997 /* SignInEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEndpoint.swift; sourceTree = "<group>"; };
 		ACB70E812C61388400923997 /* InspectionsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionsTabView.swift; sourceTree = "<group>"; };
 		ACB70E832C61389200923997 /* ProfileTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabView.swift; sourceTree = "<group>"; };
+		ACB70E862C613A3400923997 /* InspectionsEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionsEmptyStateView.swift; sourceTree = "<group>"; };
+		ACB70E882C613BFD00923997 /* InspectionsTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionsTabViewModel.swift; sourceTree = "<group>"; };
+		ACB70E8B2C6141C400923997 /* InspectionsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionsRepository.swift; sourceTree = "<group>"; };
+		ACB70E8E2C61423400923997 /* InspectionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionData.swift; sourceTree = "<group>"; };
+		ACB70E902C614C6A00923997 /* InspectionsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionsListView.swift; sourceTree = "<group>"; };
+		ACB70E922C6151C300923997 /* QuestionnaireView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionnaireView.swift; sourceTree = "<group>"; };
+		ACB70E942C6151F500923997 /* QuestionnaireViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionnaireViewModel.swift; sourceTree = "<group>"; };
+		ACB70E9C2C616D7400923997 /* InspectionsAPIRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionsAPIRepository.swift; sourceTree = "<group>"; };
+		ACB70E9F2C616DE100923997 /* StartInspectionEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartInspectionEndpoint.swift; sourceTree = "<group>"; };
+		ACB70F392C61903E00923997 /* InspectionsDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionsDataStore.swift; sourceTree = "<group>"; };
+		ACB70F3B2C6190E800923997 /* InspectionsFileDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionsFileDataStore.swift; sourceTree = "<group>"; };
+		ACB70F412C6199F300923997 /* InspectionsDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionsDependencyContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +154,12 @@
 		ACB70E412C5FDC7800923997 /* Inspections */ = {
 			isa = PBXGroup;
 			children = (
+				ACB70F402C6199D500923997 /* DI */,
+				ACB70EA42C617AF100923997 /* Persistence */,
+				ACB70E9E2C616DD300923997 /* Endpoint */,
+				ACB70E8D2C61422900923997 /* Models */,
+				ACB70E8A2C6141B400923997 /* Repository */,
+				ACB70E852C613A1700923997 /* ViewModel */,
 				ACB70E7F2C61386F00923997 /* Views */,
 			);
 			path = Inspections;
@@ -289,6 +319,9 @@
 			isa = PBXGroup;
 			children = (
 				ACB70E812C61388400923997 /* InspectionsTabView.swift */,
+				ACB70E862C613A3400923997 /* InspectionsEmptyStateView.swift */,
+				ACB70E902C614C6A00923997 /* InspectionsListView.swift */,
+				ACB70E922C6151C300923997 /* QuestionnaireView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -299,6 +332,57 @@
 				ACB70E832C61389200923997 /* ProfileTabView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		ACB70E852C613A1700923997 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ACB70E882C613BFD00923997 /* InspectionsTabViewModel.swift */,
+				ACB70E942C6151F500923997 /* QuestionnaireViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ACB70E8A2C6141B400923997 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				ACB70E8B2C6141C400923997 /* InspectionsRepository.swift */,
+				ACB70E9C2C616D7400923997 /* InspectionsAPIRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		ACB70E8D2C61422900923997 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ACB70E8E2C61423400923997 /* InspectionData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ACB70E9E2C616DD300923997 /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				ACB70E9F2C616DE100923997 /* StartInspectionEndpoint.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		ACB70EA42C617AF100923997 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				ACB70F392C61903E00923997 /* InspectionsDataStore.swift */,
+				ACB70F3B2C6190E800923997 /* InspectionsFileDataStore.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		ACB70F402C6199D500923997 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				ACB70F412C6199F300923997 /* InspectionsDependencyContainer.swift */,
+			);
+			path = DI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,6 +401,8 @@
 			dependencies = (
 			);
 			name = Inspect;
+			packageProductDependencies = (
+			);
 			productName = Inspect;
 			productReference = ACB70E2F2C5FBBEE00923997 /* Inspect.app */;
 			productType = "com.apple.product-type.application";
@@ -345,6 +431,8 @@
 				Base,
 			);
 			mainGroup = ACB70E262C5FBBEE00923997;
+			packageReferences = (
+			);
 			productRefGroup = ACB70E302C5FBBEE00923997 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -372,26 +460,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACB70E482C5FE87600923997 /* AuthenticationViewModel.swift in Sources */,
+				ACB70E872C613A3400923997 /* InspectionsEmptyStateView.swift in Sources */,
 				ACB70E592C60DFD900923997 /* Endpoint.swift in Sources */,
 				ACB70E5C2C60DFF500923997 /* HttpMethodType.swift in Sources */,
 				ACB70E522C60DECC00923997 /* AppDependencyContainer.swift in Sources */,
 				ACB70E572C60DF8000923997 /* HttpClient.swift in Sources */,
+				ACB70E8F2C61423400923997 /* InspectionData.swift in Sources */,
 				ACB70E352C5FBBEE00923997 /* MainView.swift in Sources */,
+				ACB70E932C6151C300923997 /* QuestionnaireView.swift in Sources */,
 				ACB70E652C60E1FF00923997 /* JSONDataParser.swift in Sources */,
+				ACB70E892C613BFD00923997 /* InspectionsTabViewModel.swift in Sources */,
+				ACB70E952C6151F500923997 /* QuestionnaireViewModel.swift in Sources */,
 				ACB70E602C60E14900923997 /* DataParsing.swift in Sources */,
 				ACB70E772C60F52A00923997 /* AuthDependencyContainer.swift in Sources */,
+				ACB70E9D2C616D7400923997 /* InspectionsAPIRepository.swift in Sources */,
 				ACB70E712C60E7BA00923997 /* SignUpResponder.swift in Sources */,
 				ACB70E842C61389200923997 /* ProfileTabView.swift in Sources */,
 				ACB70E332C5FBBEE00923997 /* InspectApp.swift in Sources */,
+				ACB70EA02C616DE100923997 /* StartInspectionEndpoint.swift in Sources */,
 				ACB70E632C60E18C00923997 /* URLSessionHttpClient.swift in Sources */,
 				ACB70E4D2C5FE91000923997 /* RemoteAuthRepository.swift in Sources */,
 				ACB70E7A2C60FAEF00923997 /* SignUpEndpoint.swift in Sources */,
 				ACB70E822C61388400923997 /* InspectionsTabView.swift in Sources */,
+				ACB70E912C614C6A00923997 /* InspectionsListView.swift in Sources */,
+				ACB70F3C2C6190E800923997 /* InspectionsFileDataStore.swift in Sources */,
 				ACB70E4B2C5FE88D00923997 /* AuthenticationRepository.swift in Sources */,
 				ACB70E672C60E41900923997 /* NetworkManager.swift in Sources */,
 				ACB70E5E2C60E0C700923997 /* NetworkError.swift in Sources */,
+				ACB70F3A2C61903E00923997 /* InspectionsDataStore.swift in Sources */,
 				ACB70E442C5FDCB900923997 /* AuthenticationView.swift in Sources */,
+				ACB70E8C2C6141C400923997 /* InspectionsRepository.swift in Sources */,
 				ACB70E6F2C60E7AF00923997 /* SignInResponder.swift in Sources */,
+				ACB70F422C6199F300923997 /* InspectionsDependencyContainer.swift in Sources */,
 				ACB70E6C2C60E60300923997 /* MainViewModel.swift in Sources */,
 				ACB70E7C2C60FD4B00923997 /* SignInEndpoint.swift in Sources */,
 				ACB70E742C60EFAD00923997 /* HomeView.swift in Sources */,

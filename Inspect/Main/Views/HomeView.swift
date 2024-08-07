@@ -17,10 +17,13 @@ struct HomeView: View {
     
     @State private var selectedTab = TabType.inspections
     
+    let inspectionsTabView: InspectionsTabView
+    let profileTabView: ProfileTabView
+    
     var body: some View {
         TabView(selection: $selectedTab) {
             
-            InspectionsTabView()
+            inspectionsTabView
                 .tabItem {
                     Label(
                         title: { Text("Inspections") },
@@ -29,7 +32,7 @@ struct HomeView: View {
                 }
                 .tag(TabType.inspections)
             
-            ProfileTabView()
+            profileTabView
                 .tabItem {
                     Label(
                         title: { Text("Profile") },
